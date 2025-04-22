@@ -5,7 +5,7 @@ import About from './sections/about';
 
 export default function Home() {
   return (
-    <main className='scroll-smooth'>
+    <main className='scroll-smooth overflow-hidden'>
       <Hero />
       <About />
       <Skills />

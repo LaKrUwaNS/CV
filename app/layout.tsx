@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider";
-import { NaviBarDestop, NavMobile } from "@/components/naviBar";
+import { NaviBarDestop } from "@/components/naviBar";
+import DownNav from '@/components/downNav'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +37,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           <NaviBarDestop />
-          <NavMobile />
+          <DownNav />
           {children}
         </ThemeProvider>
       </body>

@@ -116,7 +116,12 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.back {
+  border-radius: 30% 70% 57% 43% / 41% 44% 56% 59%;
 }
